@@ -1,5 +1,7 @@
 # irynaMarozCSharpAndAutomatedTestingPortfolio
 This project created by Vilnius Coding School alumni Iryna Maroz.
+Here you can find C # tasks and NUnit Selenium automadet tests.
+
 Tested website: [Pigu.lt](https://pigu.lt/lt/)
 Test scenarios and cases are written for Google Chrome browser.
 1. Purchase functionality
