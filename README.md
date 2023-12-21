@@ -25,7 +25,7 @@ Test scenarios and cases are written for Google Chrome browser.
    
         1.1.8 Assert welcome message is seen
    
-   2. Purchase functionality
+   		2. Purchase functionality
 
     2.1  Hamburger menu
    
