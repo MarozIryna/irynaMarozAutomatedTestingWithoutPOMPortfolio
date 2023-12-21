@@ -45,7 +45,31 @@ namespace piguLtLoginScenario
             string expectedLogInSuccessed = "Sveiki, testastest40@gmail.com!";
             IWebElement logInResult = driver.FindElement(By.XPath("//*[@id='headeMenu']/li[1]/div/div/div/div[2]/p"));
             Assert.That(expectedLogInSuccessed, Is.EqualTo(logInResult.Text));
-        }   
+        }
+
+        [Test, Order(2)]
+        public void HamburgerMenuTesting()
+        {
+            driver.Navigate().GoToUrl("https://pigu.lt/lt/");
+            System.Threading.Thread.Sleep(1000);
+            IWebElement closeCookies = driver.FindElement(By.XPath("//*[@id='cookie_block']/div/div/div[2]/div[2]/button[3]"));
+            closeCookies.Click();
+            System.Threading.Thread.Sleep(2000);
+            IWebElement hamburgerMenuIcon = driver.FindElement(By.XPath("//*[@id='menuBurger']"));
+            Actions actions = new Actions(driver);
+            actions.MoveToElement(hamburgerMenuIcon);
+            actions.Perform();
+
+            System.Threading.Thread.Sleep(1000);
+            IWebElement kvepalaiKosmetikaCategory = driver.FindElement(By.XPath("//*[@id='department-82']/a/span"));
+            kvepalaiKosmetikaCategory.Click();
+
+            System.Threading.Thread.Sleep(5000);
+            string expectedSearchResult = "Kvepalai";
+            IWebElement searchResult = driver.FindElement(By.XPath("//*[@id='productsCategoryBranch']/div[2]/div/div/div[1]/a/p"));
+            Assert.That(expectedSearchResult, Is.EqualTo(searchResult.Text));
+        }
+
         [TearDown]
             public void TearDown()
             {
