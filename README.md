@@ -1,5 +1,5 @@
 # irynaMarozAutomatedTestingPortfolio
-This project created by Vilnius Coding School alumni Iryna Maroz.
+Hello. This project is created by Vilnius Coding School alumni Iryna Maroz.
 Here you can find NUnit Selenium automadet tests.
 
 Tested website: [Pigu.lt](https://pigu.lt/lt/)
