@@ -1,6 +1,6 @@
 # irynaMarozAutomatedTestingPortfolio
 Hello. This project is created by Vilnius Coding School alumni Iryna Maroz.
-Here you can find NUnit Selenium automadet tests.
+Here you can find NUnit Selenium automadet tests without POM.
 
 Tested website: [Pigu.lt](https://pigu.lt/lt/)
 Test scenarios and cases are written for Google Chrome browser.
